@@ -1,0 +1,16 @@
+# gwern.net static assets
+static/js/
+static/css/
+static/font/
+static/img/
+static/include/
+static/template/
+
+# 11ty build output
+_site/
+
+# Node modules
+node_modules/
+
+# Env files
+.env

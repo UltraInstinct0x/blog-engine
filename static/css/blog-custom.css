@@ -1,0 +1,55 @@
+/* blog.goku.codes — post index and tag listing styles */
+/* Uses gwern's CSS variables so dark mode works automatically */
+
+.post-index {
+    list-style: none;
+    padding: 0;
+    margin: 1.5em 0;
+}
+.post-index-item {
+    margin-bottom: 2.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--GW-abstract-border-color, #bbb);
+}
+.post-index-item:last-child { border-bottom: none; }
+.post-index-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+}
+.post-index-title a {
+    color: var(--GW-body-text-color, #000);
+    text-decoration: none;
+}
+.post-index-title a:hover {
+    color: var(--GW-body-link-hover-color, #888);
+    text-decoration: underline;
+}
+.post-index-meta {
+    font-family: var(--GW-sans-serif-font-stack, sans-serif);
+    font-size: 0.85em;
+    color: var(--GW-sidenote-border-color, #aaa);
+    margin-bottom: 0.5em;
+}
+.post-index-meta .interpunct { opacity: 0.35; margin: 0 0.5em; }
+.post-index-description {
+    font-style: italic;
+    color: var(--GW-body-text-color, #000);
+    margin: 0.4em 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+.post-index-tags {
+    font-family: var(--GW-monospaced-font-stack, monospace);
+    font-style: italic;
+    font-size: 0.82em;
+    margin-top: 0.4em;
+}
+.post-index-tags a {
+    color: var(--GW-body-link-color, #333);
+    text-decoration: none;
+}
+.post-index-tags a:hover {
+    color: var(--GW-body-link-hover-color, #888);
+    text-decoration: underline;
+}
